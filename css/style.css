@@ -90,6 +90,11 @@ main#index{
     flex-direction: column;
     background-color: #ff8200;
 }
+main#index section div#link a{
+    font-family: "Telex", sans-serif;
+    text-decoration: underline;
+    color: rgb(23, 134, 213);
+}
 #main-turma{
     background-color: #f1f5f9;
     height: 65vh;
@@ -139,7 +144,7 @@ main#main-contagem{
     margin-bottom: 20px;
     font-size: 20px;
 }
-.login form#login button[type = 'submit'] {
+.login form#login button[type = 'submit']{
     text-transform: uppercase;
     background-color: #7ed957;
     font-weight: bold;
@@ -149,7 +154,7 @@ a{
     text-decoration: none;
     color: white;
     position: relative;
-    bottom: 10px; /* GAMBIARRA PARA A APROVAÇÃO TEM QUE MUDAR DEPOIS QUE CONFIMAR QUE VAI SER ASSIM */
+    bottom: 10px;
 }
 #escolher-sala-section{
     display: flex;
@@ -317,7 +322,7 @@ form #input-contagem input[type = 'number']{
 #mais{
     background-color: #48bc50;
 }
-form button[type ='submit']{
+main#index form button[type ='submit'],#enviar_form{
     background-color: #3caf47;
     text-transform: uppercase;
     border: none;
@@ -365,6 +370,10 @@ header#cadastro{
     font-family: "Archivo Black", sans-serif;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+header#cadastro div#tituloh1{
+    margin-left: 100px;
 }
 header#cadastro img#fig{
     width: 300px;
@@ -372,17 +381,57 @@ header#cadastro img#fig{
     left: 50px;
     top: 20px;
 }
+main#main-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+}
 main#main-cadastro section{
     background-color: #ffdf2b;
-    width: 30%;
-    height: 50vh;
+    width: 28%;
+    height: 55vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 main#main-cadastro section form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
+}
+main#main-cadastro section form div{
+    display: flex;
+    font-family: "Telex", sans-serif;
+    color: rgb(69, 69, 69);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+main#main-cadastro section form input{
+    width:20vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+}
+main#main-cadastro section form input::placeholder{
+    color: rgb(69, 69, 69);
+    text-align: center;
+    font-family: "Telex", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#btn-cadastrar{
+    width: 97%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #18b41a;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
 }
