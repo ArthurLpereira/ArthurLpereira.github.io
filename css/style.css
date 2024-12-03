@@ -120,7 +120,12 @@ main#main-contagem{
     max-width: 400px;
     text-align: center;
 }
-
+#loginn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .login h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -434,4 +439,56 @@ main#main-cadastro section form input::placeholder{
     border: none;
     font-size: 20px;
     font-weight: bold;
+}
+/* @media screen and (max-width:1366px){
+    main{
+        background-color: red;
+    }
+} */
+@media screen and (max-width:1024px){
+    header img{
+        width: 130px;
+        height: auto;
+    }
+    .varias-imgs img{
+        width: 300px;
+        height: auto;
+        position: relative;
+        top: 15px;
+    }
+    .login h1{
+        font-size: 35px;
+    }
+    #link a{
+        font-size: 20px;
+    }
+    header#cadastro h1{
+        font-size: 32px;
+        position: relative;
+        top: 20px;
+        right: 30px;
+    }
+    header#cadastro img{
+        position: relative;
+        right: 30px;
+    }
+    header#cadastro div#tituloh1{
+        margin-left: 0px;
+    }
+    header#cadastro img#fig{
+        width: 300px;
+        position: relative;   
+        right: 20px;
+        top: 0px;
+    }
+    main#main-cadastro section{
+        width: 90%;
+    }
+    main#main-cadastro section form input{
+        width:70vw;
+        height: 7vh;
+        border-radius: 10px;
+        border: none;
+    }
+
 }
