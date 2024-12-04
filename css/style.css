@@ -507,11 +507,19 @@ main#main-cadastro section form input::placeholder{
     #body_salas{
         overflow: visible;
     }
+    header#Contagem #nomeSala{
+        width: 70vw;
+    }
     #menos,#mais{
         height: 80px;
         width: 80px;
     }
     div#input-contagem{
-        background-color: red;
+        gap: 40px;
+    }
+    footer#footer-contagem img{
+        width: 140px;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 }
