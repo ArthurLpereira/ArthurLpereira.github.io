@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Total Contagem</title>
+</head>
+
+<body id="body_salas">
+    <header id="turma-total">
+        <img src="./img/logo-sesi.png" alt="">
+        <div class="txt-turma">
+            <h1>Contagem Total</h1>
+        </div>
+    </header>
+    <main id="main-turma">
+        <section id="escolher-sala-section">
+            <section id="escolher-sala-section-total">
+                <div class="escolha-sala">
+                    <p>1° e 2° Fundamental 1A</p>
+                    <p>1° Ano: 18</p>
+                    <p>2° Ano: 22</p>
+                    <p>Total: 40</p>
+                </div>
+                <div class="escolha-sala">
+                    <p>3° ao 5° Fundamental 1B</p>
+                    <p>3° Ano: 20</p>
+                    <p>4° Ano: 28</p>
+                    <p>5° Ano: 16</p>
+                    <p>Total: 64</p>
+                </div>
+                <div class="escolha-sala">
+                    <p>6° ao 9° Fundamental 2</p>
+                    <p>6° Ano: 24</p>
+                    <p>7° Ano: 18</p>
+                    <p>8° Ano: 30</p>
+                    <p>9° Ano: 21</p>
+                    <p>Total: 93</p>
+                </div>
+                <div class="escolha-sala">
+                    <p>1° ao 3° Ensino Médio</p>
+                    <p>1° Ano: 26</p>
+                    <p>2° Ano: 19</p>
+                    <p>3° Ano: 25</p>
+                    <p>Total: 70</p>
+                </div>
+                <div class="escolha-sala cursos">
+                    <p>Cursos Adicionais</p>
+                    <p>Arduino: 18</p>
+                    <p>SENAI: 26</p>
+                    <p>T.A: 19</p>
+                    <p id="especial">Ver mais</p>
+                    <p>Total: 175</p>
+                </div>
+                
+                </div>
+            </section>
+        </section>
+
+        <dialog id="dialog-total">
+            <div class="fechar" onclick="fecharDialog()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2>Total Cursos</h2>
+            <div id="nomes">
+                <p>Arduino: 18</p>
+                <p>Robótica: 22</p>
+                <p>Personaliza: 15</p>
+                <p>SENAI: 26</p>
+                <p>Caça Asteroide: 20</p>
+                <p>Autorizados: 17</p>
+                <p>Para Gabaritar: 14</p>
+                <p>TRI: 23</p>
+                <p>Topicos Avançados: 19</p>
+                <p>Práticas Investigativas: 21</p>
+                <p>Total: 175</p>
+            </div>
+        </dialog>
+    </main>
+    <footer id="footer-turma">
+        <img src="./img/figurinha-verde-laranja.svg" alt="" id="img1-footer-turma">
+        <img src="./img/figurinha-amarelo-roxo.svg" alt="" id="img2-footer-turma">
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -23,16 +23,16 @@ header {
     align-items: center;
     padding: 0 12px;
 }
-header#turma{
+header#turma,#turma-total{
     background-color: #ff8200;
     font-family: "Archivo Black", sans-serif;
 }
-header#turma h1,header#cadastro h1{
+header#turma h1,header#cadastro h1,#turma-total h1{
     color: white;
     text-transform: uppercase;
     font-size: 35px;
 }
-header#turma{
+header#turma,#turma-total{
     background-color: #ffd700;
     height: 25vh;
     overflow: hidden;
@@ -163,13 +163,45 @@ main#index .login form#loginn a{
     position: relative;
     bottom: 9px;
 }
-#escolher-sala-section{
+#escolher-sala-section,#escolher-sala-section-total{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
     gap: 30px;
+}
+header#turma-total{
+    height: 20vh;
+}
+#escolher-sala-section-total{
+    width: 90vw;
+    margin-top: 100px;
+}
+#escolher-sala-section-total div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 35vh;
+}
+#escolher-sala-section-total p:nth-child(1){
+    /* margin-bottom: 10px; */
+    background-color: transparent;
+    width: 100%;
+}
+#escolher-sala-section-total p{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.escolha-sala.cursos p#especial{
+    background-color: transparent;
+    font-size: 13px;
 }
 .escolha-sala{
     height: 25vh;
@@ -243,7 +275,28 @@ main#index .login form#loginn a{
     border: none;
     cursor: pointer;
 }
-#dialog{
+#dialog-total{
+    background-color:#8b97fd;
+}
+#dialog-total p{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: "telex";
+    border-radius: 10px;
+}
+#dialog-total p:nth-child(9){
+font-size: 24px;
+}
+#dialog-total p:nth-child(10){
+    font-size: 22px;
+    text-align: center;
+}
+#dialog,#dialog-total{
     height: 350px;
     width: 370px;
     border: none;
@@ -251,16 +304,16 @@ main#index .login form#loginn a{
     top: calc(50% - 175px);
     left: calc(50% - 185px);
 }
-#dialog::backdrop{
+dialog::backdrop{
     background-color: rgba(0, 0, 0, 0.3);}
-#dialog h2{
+#dialog h2,#dialog-total h2{
     font-family: "Archivo Black", sans-serif;
     text-decoration: underline;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-#dialog #botoes-container{
+#dialog #botoes-container,#dialog-total #nomes p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,6 +513,16 @@ main#main-contagem section form a{
 }
 dialog::-webkit-scrollbar-track {
     background-color: #611818; /* Cor do fundo da barra de rolagem */
+}
+footer a{
+    font-size: 22px;
+    font-family: "Telex", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+#especial{
+  font-size: 16px;
+  text-decoration: underline;
 }
 /* @media screen and (max-width:1366px){
     main{
