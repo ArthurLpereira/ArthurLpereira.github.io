@@ -1,20 +1,32 @@
-
 const btn_abrir_dialog_total = document.getElementById('especial');
 
-
-btn_abrir_dialog_total.addEventListener('click', () => {
+function abrirDialogo() {
     const dialog_total = document.getElementById("dialog-total");
     dialog_total.showModal();
-});
+}
 
-const btn_login = document.getElementById('fazer_login');
-btn_login.addEventListener('click', () => {
-    console.log('Evento acionado');
-    window.location.href = "./grupamento_turma.html";
+// Função para fechar o diálogo
+function fecharDialog() {
+    const dialog_total = document.getElementById("dialog-total");
+    dialog_total.close();
+}
 
+function fazerLogin() {
+    console.log('Evento de login acionado');
     alert('Login realizado com sucesso');
+    setTimeout(() => {
+        window.location.href = "./grupamento_turma.html";
+    }, 0);
+}
 
-});
+function fazerCadastro(){
+    console.log('evento de cadastro acionado')
+    alert('Usuário cadastrado com sucesso')
+
+    setTimeout(()=>{
+        window.location.href = './index.html'
+    })
+}
 
 function AbrirDialog(escolhaSalaID) {
     const DadosDialog = {
@@ -97,14 +109,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const btn_enviar_contagem = document.getElementById('enviar_form');
-btn_enviar_contagem.addEventListener('click', () => {
+function enviarFormulario() {
     console.log('Evento acionado');
-    window.location.href = "./grupamento_turma.html";
-
     alert('Contagem cadastrada com sucesso');
+    setTimeout(()=>{
+        window.location.href = "./grupamento_turma.html";
+    },0)
+}
 
-});
 
 
 

@@ -142,7 +142,8 @@ main#main-contagem{
     font-size: 30px;
 }
 .login input, 
-.login button {
+.login button,
+footer#footer-turma a{
     width: 80%;
     height: 6vh;
     border-radius: 6px;
@@ -151,13 +152,22 @@ main#main-contagem{
     margin-bottom: 20px;
     font-size: 20px;
 }
-.login form#login button[type = 'submit']{
+.login form#login button[type = 'submit'],footer#footer-turma a {
     text-transform: uppercase;
     background-color: #7ed957;
     font-weight: bold;
     cursor: pointer;
 }
-main#index .login form#loginn a{
+footer#footer-turma a{
+    width: 10%;
+    border: 1px solid black;
+    background-color: #e0e2e4;
+    border-radius: 10px;
+}
+footer#footer-turma a p{
+    margin-top: 10px;
+}
+main#index .login form#loginn p{
     text-decoration: none;
     color: white;
     position: relative;
@@ -524,6 +534,9 @@ footer a{
   font-size: 16px;
   text-decoration: underline;
 }
+#body_salas-total{
+    overflow: hidden;
+}
 /* @media screen and (max-width:1366px){
     main{
         background-color: red;
@@ -571,7 +584,7 @@ footer a{
         border: none;
     }
     header#turma{
-        height: 20vh;
+        height: 22vh;
         font-size: 28px;
     }
     #escolher-sala-section{
@@ -586,7 +599,7 @@ footer a{
     #footer-turma img{
         display: none;
     }
-    #body_salas{
+    #body_salas,#body_salas-total{
         overflow: visible;
     }
     header#Contagem #nomeSala{
@@ -603,5 +616,18 @@ footer a{
         width: 140px;
         margin-left: 0px;
         margin-top: 20px;
+    }
+    footer#footer-turma a{
+        position: absolute;
+        bottom: -73%;
+        left: calc(50% - 75px);
+        width: 150px;
+    }
+    #body_salas-total main{
+        margin-top: 200px;
+    }
+    #body_salas-total header#turma-total h1{
+        font-size: 30px;
+        text-align: center;
     }
 }

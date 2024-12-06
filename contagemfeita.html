@@ -11,7 +11,7 @@
     <title>Total Contagem</title>
 </head>
 
-<body id="body_salas">
+<body id="body_salas-total">
     <header id="turma-total">
         <img src="./img/logo-sesi.png" alt="">
         <div class="txt-turma">
@@ -54,19 +54,20 @@
                     <p>Arduino: 18</p>
                     <p>SENAI: 26</p>
                     <p>T.A: 19</p>
-                    <p id="especial">Ver mais</p>
+                    <p id="especial" class="link-clicavel" onclick="abrirDialogo()">Ver mais</p>
                     <p>Total: 175</p>
                 </div>
                 
                 </div>
             </section>
         </section>
-
         <dialog id="dialog-total">
-            <div class="fechar" onclick="fecharDialog()">
-                <i class="fa-solid fa-xmark"></i>
+            <div class="dialog-header">
+                <button class="fechar" onclick="fecharDialog()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Total Cursos</h2>
             </div>
-            <h2>Total Cursos</h2>
             <div id="nomes">
                 <p>Arduino: 18</p>
                 <p>Robótica: 22</p>
@@ -78,9 +79,10 @@
                 <p>TRI: 23</p>
                 <p>Topicos Avançados: 19</p>
                 <p>Práticas Investigativas: 21</p>
-                <p>Total: 175</p>
+                <p><strong>Total: 175</strong></p>
             </div>
         </dialog>
+        
     </main>
     <footer id="footer-turma">
         <img src="./img/figurinha-verde-laranja.svg" alt="" id="img1-footer-turma">
