@@ -51,10 +51,12 @@ function AbrirDialog(escolhaSalaID) {
             localStorage.setItem("textoSelecionado", botao);
             window.location.href = "contador.html";
         });
+        
+       if (botao === "Práticas Investigativas") {
+            button.style.fontSize = "24px";
+        }
 
         container.appendChild(button);
-        if (botao === "Práticas Investigativas") {
-        }
     });
 
     const dialog = document.getElementById("dialog");
@@ -116,11 +118,3 @@ function enviarFormulario() {
         window.location.href = "./grupamento_turma.html";
     },0)
 }
-
-
-
-
-
-console.log('Script foi carregado')
-
-
