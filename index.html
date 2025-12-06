@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- LIGAÇÃO AO FICHEIRO JS (LÓGICA) -->
-    <!-- O atributo 'defer' diz para carregar o JS só depois do HTML estar pronto -->
     <script src="script.js" defer></script>
 </head>
 
@@ -31,7 +30,6 @@
                 <li><a href="#skills" onclick="toggleMenu()" data-i18n="nav_skills">Tecnologias</a></li>
                 <li><a href="#projetos" onclick="toggleMenu()" data-i18n="nav_projects">Projetos</a></li>
                 <li><a href="#contato" onclick="toggleMenu()" data-i18n="nav_contact">Contato</a></li>
-                <!-- Botão de Trocar Idioma -->
                 <li><button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()"></button></li>
             </ul>
         </nav>
@@ -46,8 +44,7 @@
             <a href="#projetos" class="btn" data-i18n="hero_btn">Ver O Meu Trabalho</a>
         </div>
         <div class="profile-container">
-            <!-- Coloca a tua foto na mesma pasta e muda o src para "minhafoto.jpg" -->
-            <img src="./assets/arthur.jpeg" alt="Foto de Perfil" class="profile-pic">
+            <img src="./assets/arthur4.png" alt="Foto de Perfil" class="profile-pic">
         </div>
     </section>
 
@@ -104,6 +101,14 @@
                 <button class="details-btn" data-i18n="btn_details">Ver Detalhes &rarr;</button>
             </article>
 
+            <!-- NOVO PROJETO: CLONE R7 -->
+            <article class="card" onclick="openModal('r7clone')">
+                <h3 data-i18n="proj_r7_title">Clone Portal R7</h3>
+                <p data-i18n="proj_r7_desc">Recriação responsiva da interface de um grande portal de notícias.</p>
+                <span class="techs">HTML • CSS </span>
+                <button class="details-btn" data-i18n="btn_details">Ver Detalhes &rarr;</button>
+            </article>
+
         </div>
     </section>
 
@@ -114,7 +119,7 @@
             <br>
             <a href="mailto:arthurleandro50@gmail.com" class="btn" data-i18n="contact_btn">Enviar E-mail</a>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arthur-pereira-a12aa2310/" class="social-icon" target="_blank"><i
+                <a href="https://www.linkedin.com/in/arthurleandrodev/" class="social-icon" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ArthurLpereira" class="social-icon" target="_blank"><i
                         class="fab fa-github"></i></a>
@@ -133,7 +138,6 @@
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close-btn" onclick="closeModal()">&times;</span>
 
-            <!-- Carrossel -->
             <div class="carousel-container" onmouseenter="stopAutoSlide()" onmouseleave="startAutoSlide()">
                 <button class="carousel-arrow prev" onclick="manualChangeSlide(-1)">&#10094;</button>
                 <div id="carouselImages"></div>

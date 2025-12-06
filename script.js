@@ -13,19 +13,26 @@ const translations = {
         about_text: "Sou Arthur Leandro, tenho 18 anos e sou um desenvolvedor Web focado em inovação. Destaquei-me no curso de Desenvolvimento de Sistemas do SENAI, sendo escolhido por mérito para um estágio onde amplio minha experiência prática. Atualmente, aprimoro minhas habilidades em PHP e Laravel, e estou matriculado em Análise e Desenvolvimento de Sistemas (ADS), pronto para iniciar minha graduação e construir soluções cada vez mais eficientes.",
         skills_title: "Tecnologias",
         projects_title: "Meus Projetos",
+
         proj_portfolio_title: "Sistema de Gerenciamento de Alocação",
         proj_portfolio_desc: "Um sistema em colaboração com o SENAI para ajudar no gerenciamento de turmas.",
+
         proj_landing_title: "Contador de Alunos",
         proj_landing_desc: "Este sistema foi projetado para otimizar o tempo dos funcionários e reduzir o desperdício de alimentos.",
+
         proj_sistema_title: "Sistema Full-Stack",
         proj_sistema_desc: "Aplicação completa com API REST separada e dashboard administrativo.",
+
+        // NOVO: TRADUÇÕES DO CLONE R7 (ATUALIZADO)
+        proj_r7_title: "Clone Portal R7",
+        proj_r7_desc: "Recriação visual da interface de um portal de notícias usando HTML e CSS.",
+
         btn_details: "Ver Detalhes &rarr;",
         contact_title: "Vamos Conversar?",
         contact_text: "Estou disponível para novas oportunidades e colaborações.",
         contact_btn: "Enviar E-mail",
         footer_text: "Desenvolvido por Arthur Leandro © 2025",
         modal_code: "Ver Código",
-        // Removi "modal_live" pois não vamos usar mais
     },
     en: {
         nav_home: "Home",
@@ -40,12 +47,20 @@ const translations = {
         about_text: "I am Arthur Leandro, I am 18 years old and a Web Developer focused on innovation. I stood out in the Systems Development course at SENAI, being selected by merit for an internship where I am expanding my practical experience. Currently, I am honing my skills in PHP and Laravel, and I am enrolled in the Systems Analysis and Development (ADS) degree, ready to start my graduation and build increasingly efficient solutions.",
         skills_title: "Technologies",
         projects_title: "My Projects",
+
         proj_portfolio_title: "Allocation Management System",
         proj_portfolio_desc: "A system developed in collaboration with SENAI to assist in class management.",
+
         proj_landing_title: "Student Counter System",
         proj_landing_desc: "This system was designed to optimize employee time and reduce food waste.",
+
         proj_sistema_title: "Full-Stack System",
         proj_sistema_desc: "Complete application with separate REST API and administrative dashboard.",
+
+        // NOVO: TRADUÇÕES DO CLONE R7 (ATUALIZADO)
+        proj_r7_title: "R7 Portal Clone",
+        proj_r7_desc: "Visual recreation of a news portal interface using HTML and CSS.",
+
         btn_details: "View Details &rarr;",
         contact_title: "Let's Talk?",
         contact_text: "I am available for new opportunities and collaborations.",
@@ -68,22 +83,15 @@ const projectsData = {
             "assets/consultor_sga.png"
         ],
         techs: ["HTML", "CSS", "JavaScript", "Laravel", "Mysql"],
-
-        // AQUI ESTÁ A MUDANÇA: Objeto com dois links
         repoLink: {
-            front: "https://github.com/ArthurLpereira/gerenciador_senai.git", // Coloca o link real do Front
-            back: "https://github.com/ArthurLpereira/sga_senai_api.git"   // Coloca o link real do Back
+            front: "https://github.com/ArthurLpereira/gerenciador_senai.git",
+            back: "https://github.com/ArthurLpereira/sga_senai_api.git"
         }
-        // liveLink foi removido
     },
     'landing': {
-        // Mantive a chave 'landing' para não quebrar o HTML, mas o conteúdo é do Contador
         title: { pt: "Contador de Alunos", en: "Student Counter System" },
         description: {
-            // Texto Refinado e Profissional
             pt: "Desenvolvido em parceria com o SENAI, este sistema nasceu da necessidade de substituir a contagem manual de alunos no refeitório. O objetivo foi otimizar o tempo dos funcionários e reduzir significativamente o desperdício alimentar através de dados precisos.\n\nFuncionalidades principais:\n- Contagem automatizada de alunos\n- Relatórios dinâmicos e personalizados\n- Controle de estoque integrado\n- Diferentes níveis de acesso (Login)",
-
-            // Tradução Técnica
             en: "Developed in partnership with SENAI, this system was created to replace manual student counting in the cafeteria. The goal was to optimize staff time and significantly reduce food waste through accurate data tracking.\n\nKey Features:\n- Automated student counting\n- Dynamic and custom reports\n- Integrated inventory control\n- Role-based access levels"
         },
         images: [
@@ -91,10 +99,24 @@ const projectsData = {
             "assets/contador_calendario.png",
             "assets/contador_contagem.png",
         ],
-        // Podes atualizar as tecnologias abaixo quando quiseres
         techs: ["HTML", "CSS", "JavaScript", "PHP"],
         repoLink: "https://github.com/ArthurLpereira/Contador_phpV2.git"
     },
+    // --- PROJETO R7 (ATUALIZADO PARA INICIANTE) ---
+    'r7clone': {
+        title: { pt: "Clone do Portal R7", en: "R7 News Portal Clone" },
+        description: {
+            pt: "Projeto desenvolvido como desafio técnico numa seletiva. O objetivo foi recriar o visual do portal de notícias R7 utilizando apenas HTML e CSS básico, focando na organização dos elementos na tela.\n\nFuncionalidades principais:\n- Estrutura HTML organizada\n- Estilização com CSS\n- Posicionamento de imagens e textos\n- Recriação fiel do layout original",
+            en: "Project developed as a technical challenge for a selection process. The goal was to recreate the visual of the R7 news portal using only basic HTML and CSS, focusing on organizing elements on the screen.\n\nKey Features:\n- Organized HTML structure\n- CSS Styling\n- Image and text positioning\n- Faithful recreation of the original layout"
+        },
+        images: [
+            "assets/r7_telaum.png",
+            "assets/r7_teladois.png",
+            "assets/r7_telatres.png",
+        ],
+        techs: ["HTML", "CSS"], // Removido JS e Responsividade
+        repoLink: "https://github.com/ArthurLpereira/Recriando_r7.git" // Atualiza com o teu link depois
+    }
 };
 
 /* --- LÓGICA DE IDIOMA --- */
@@ -112,7 +134,6 @@ function updateContent() {
         }
     });
     const langBtn = document.getElementById('lang-toggle');
-    // Certifica-te que tens as imagens 'assets/eua.png' e 'assets/brasil.png' na pasta
     const flagImg = currentLang === 'pt' ? 'assets/eua.png' : 'assets/brasil.png';
     langBtn.innerHTML = `<img src="${flagImg}" alt="Mudar idioma" class="flag-icon">`;
 }
@@ -144,28 +165,20 @@ function openModal(projectId) {
     techContainer.innerHTML = project.techs.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
 
     const linkContainer = document.getElementById('modalLinks');
-    linkContainer.innerHTML = ''; // Limpa botões antigos
+    linkContainer.innerHTML = '';
 
-    // NOVA LÓGICA PARA OS BOTÕES
     const btnCodeText = translations[currentLang].modal_code;
 
-    // Se repoLink for um OBJETO (Caso do SGA com Front e Back)
     if (typeof project.repoLink === 'object' && project.repoLink !== null) {
-        // Botão Front-end
         linkContainer.innerHTML += `
             <a href="${project.repoLink.front}" target="_blank" class="modal-btn btn-code">
                 <i class="fab fa-github"></i> Front-end
             </a>
-        `;
-        // Botão Back-end
-        linkContainer.innerHTML += `
             <a href="${project.repoLink.back}" target="_blank" class="modal-btn btn-code">
                 <i class="fas fa-database"></i> Back-end
             </a>
         `;
-    }
-    // Se repoLink for TEXTO (Casos normais)
-    else {
+    } else {
         linkContainer.innerHTML = `
             <a href="${project.repoLink}" target="_blank" class="modal-btn btn-code">
                 <i class="fab fa-github"></i> ${btnCodeText}
@@ -173,7 +186,6 @@ function openModal(projectId) {
         `;
     }
 
-    // Configuração do Carrossel
     currentImages = project.images;
     currentSlide = 0;
     updateCarousel();
@@ -199,7 +211,6 @@ function closeModal(event) {
     stopAutoSlide();
 }
 
-// FECHAR MODAL COM A TECLA ESC
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeModal();
