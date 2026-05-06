@@ -27,6 +27,9 @@ const translations = {
         proj_r7_title: "Clone Portal R7",
         proj_r7_desc: "Recriação visual da interface de um portal de notícias usando HTML e CSS.",
 
+        proj_kamban_title: "DevFlow",
+        proj_kamban_desc: "Um kamban feito para estudar React e Typescript.",
+
         btn_details: "Ver Detalhes &rarr;",
         contact_title: "Vamos Conversar?",
         contact_text: "Estou disponível para novas oportunidades e colaborações.",
@@ -60,6 +63,9 @@ const translations = {
         // NOVO: TRADUÇÕES DO CLONE R7 (ATUALIZADO)
         proj_r7_title: "R7 Portal Clone",
         proj_r7_desc: "Visual recreation of a news portal interface using HTML and CSS.",
+
+        proj_kamban_title: "DevFlow",
+        proj_kamban_desc: "A kamban made to study React and Typescript.",
 
         btn_details: "View Details &rarr;",
         contact_title: "Let's Talk?",
@@ -116,7 +122,22 @@ const projectsData = {
         ],
         techs: ["HTML", "CSS"], // Removido JS e Responsividade
         repoLink: "https://github.com/ArthurLpereira/Recriando_r7.git" // Atualiza com o teu link depois
+    },
+
+    'kamban': {
+        title: { pt: "DevFlow", en: "DevFlow" },
+        description: {
+            pt: "O DevFlow é uma aplicação completa de gerenciamento de tarefas baseada na metodologia Kanban. O projeto foi desenvolvido com o objetivo principal de dominar o ecossistema TypeScript, garantindo tipagem estática e segurança de dados desde o banco de dados até a interface do usuário. \n\nFuncionalidades principais:\n- Gestão de Tarefas\n-Categorias Personalizadas\n- Níveis de Urgência\n",
+            en: "DevFlow is a full-stack task management application based on the Kanban methodology. The project was developed with the primary goal of mastering the TypeScript ecosystem, ensuring static typing and data security from the database to the user interface.\n\nKey features:\n- Task Management\n-Custom Categories\n- Urgency Levels\n"
+        },
+        images: [
+            "assets/InicialKamban.png",
+            "assets/ModalKamban.png",
+        ],
+        techs: ["React", "Typescript"],
+        repoLink: "https://github.com/ArthurLpereira/DevFlow" // Atualiza com o teu link depois
     }
+
 };
 
 /* --- LÓGICA DE IDIOMA --- */
