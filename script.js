@@ -3,6 +3,7 @@ const translations = {
     pt: {
         nav_home: "Início",
         nav_about: "Sobre",
+        nav_resume: "Resumo",
         nav_skills: "Tecnologias",
         nav_projects: "Projetos",
         nav_contact: "Contato",
@@ -14,6 +15,31 @@ const translations = {
         skills_title: "Tecnologias",
         projects_title: "Meus Projetos",
 
+        // NOVO: RESUMO / HISTÓRICO ACADÊMICO
+        resume_badge: "Educação",
+        resume_title: "Histórico Acadêmico",
+        resume_subtitle: "Minha trajetória educacional em tecnologia, do técnico à graduação.",
+        resume_item1_type: "Curso",
+        resume_item1_title: "Análise e Desenvolvimento de Sistemas - Curso Técnico",
+        resume_item1_achievement: "Estágio pelo destaque",
+        resume_item2_type: "Faculdade",
+        resume_item2_title: "Análise e Desenvolvimento de Sistemas - Tecnólogo",
+        resume_item3_type: "Certificados",
+        resume_item3_title: "Certificados",
+        cert2_name: "Fluência - Fundamentos da inteligência artificial",
+        cert3_name: "Privacidade e proteção de dados (LGPD)",
+
+        // NOVO: EXPERIÊNCIA PROFISSIONAL
+        exp_badge: "Experiência",
+        exp_title: "Experiência Profissional",
+        exp_subtitle: "Projetos práticos desenvolvidos durante minha formação técnica no SENAI.",
+        exp_item1_type: "Front-End",
+        exp_item1_title: "Projeto Contador de Alunos",
+        exp_item1_desc: "Projeto acadêmico feito no curso do SENAI, para substituir a contagem manual de alunos no refeitório.",
+        exp_item2_type: "Back-End",
+        exp_item2_title: "Projeto Sistema de Gerenciamento de Alocação",
+        exp_item2_desc: "Projeto acadêmico feito no curso do SENAI, para ajudar no gerenciamento de turmas, colaboradores, ambientes, cursos e turmas.",
+
         proj_portfolio_title: "Sistema de Gerenciamento de Alocação",
         proj_portfolio_desc: "Um sistema em colaboração com o SENAI para ajudar no gerenciamento de turmas.",
 
@@ -23,7 +49,6 @@ const translations = {
         proj_sistema_title: "Sistema Full-Stack",
         proj_sistema_desc: "Aplicação completa com API REST separada e dashboard administrativo.",
 
-        // NOVO: TRADUÇÕES DO CLONE R7 (ATUALIZADO)
         proj_r7_title: "Clone Portal R7",
         proj_r7_desc: "Recriação visual da interface de um portal de notícias usando HTML e CSS.",
 
@@ -31,15 +56,27 @@ const translations = {
         proj_kamban_desc: "Um kamban feito para estudar React e Typescript.",
 
         btn_details: "Ver Detalhes &rarr;",
-        contact_title: "Vamos Conversar?",
-        contact_text: "Estou disponível para novas oportunidades e colaborações.",
-        contact_btn: "Enviar E-mail",
+        contact_title: "Contato",
         footer_text: "Desenvolvido por Arthur Leandro © 2025",
         modal_code: "Ver Código",
+
+        contact_address_label: "Endereço",
+        contact_phone_label: "Me ligue",
+        contact_email_label: "Mande um email",
+
+        form_name: "Seu nome",
+        form_email: "Seu email",
+        form_subject: "Assunto",
+        form_message: "Mensagem",
+        form_submit: "Enviar Mensagem",
+        form_loading: "Carregando",
+        form_sent: "Sua mensagem foi enviada. Obrigado.",
+        form_error: "Ocorreu um erro. Tente novamente.",
     },
     en: {
         nav_home: "Home",
         nav_about: "About",
+        nav_resume: "Resume",
         nav_skills: "Skills",
         nav_projects: "Projects",
         nav_contact: "Contact",
@@ -50,6 +87,31 @@ const translations = {
         about_text: "I am Arthur Leandro, I am 18 years old and a Web Developer focused on innovation. I stood out in the Systems Development course at SENAI, being selected by merit for an internship where I am expanding my practical experience. Currently, I am honing my skills in PHP and Laravel, and I am enrolled in the Systems Analysis and Development (ADS) degree, ready to start my graduation and build increasingly efficient solutions.",
         skills_title: "Technologies",
         projects_title: "My Projects",
+
+        // NEW: RESUME / ACADEMIC HISTORY
+        resume_badge: "Education",
+        resume_title: "Academic History",
+        resume_subtitle: "My educational path in technology, from technical course to college.",
+        resume_item1_type: "Course",
+        resume_item1_title: "Systems Analysis and Development - Technical Course",
+        resume_item1_achievement: "Internship awarded for merit",
+        resume_item2_type: "College",
+        resume_item2_title: "Systems Analysis and Development - Technologist",
+        resume_item3_type: "Certificates",
+        resume_item3_title: "Certificates",
+        cert2_name: "Fluência - AI Fundamentals",
+        cert3_name: "Data Privacy and Protection (LGPD)",
+
+        // NEW: PROFESSIONAL EXPERIENCE
+        exp_badge: "Experience",
+        exp_title: "Professional Experience",
+        exp_subtitle: "Hands-on projects developed during my technical course at SENAI.",
+        exp_item1_type: "Front-End",
+        exp_item1_title: "Student Counter Project",
+        exp_item1_desc: "Project academic developed during the SENAI course, to replace the manual counting of students in the cafeteria.",
+        exp_item2_type: "Back-End",
+        exp_item2_title: "Allocation Management System Project",
+        exp_item2_desc: "Project academic developed during the SENAI course, to help in the management of classes, collaborators, environments, courses and classes.",
 
         proj_portfolio_title: "Allocation Management System",
         proj_portfolio_desc: "A system developed in collaboration with SENAI to assist in class management.",
@@ -68,11 +130,24 @@ const translations = {
         proj_kamban_desc: "A kamban made to study React and Typescript.",
 
         btn_details: "View Details &rarr;",
-        contact_title: "Let's Talk?",
-        contact_text: "I am available for new opportunities and collaborations.",
-        contact_btn: "Send E-mail",
+        contact_title: "Contact",
         footer_text: "Developed by Arthur Leandro © 2025",
         modal_code: "View Code",
+
+        // NEW: CONTACT CARDS
+        contact_address_label: "Address",
+        contact_phone_label: "Call me",
+        contact_email_label: "Email me",
+
+        // NEW: CONTACT FORM
+        form_name: "Your name",
+        form_email: "Your email",
+        form_subject: "Subject",
+        form_message: "Message",
+        form_submit: "Send Message",
+        form_loading: "Loading",
+        form_sent: "Your message has been sent. Thank you.",
+        form_error: "Something went wrong. Please try again.",
     }
 };
 
@@ -154,6 +229,15 @@ function updateContent() {
             }
         }
     });
+
+    // NOVO: traduz placeholders de inputs/textareas (ex: formulário de contato)
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[currentLang][key]) {
+            element.setAttribute('placeholder', translations[currentLang][key]);
+        }
+    });
+
     const langBtn = document.getElementById('lang-toggle');
     const flagImg = currentLang === 'pt' ? 'assets/eua.png' : 'assets/brasil.png';
     langBtn.innerHTML = `<img src="${flagImg}" alt="Mudar idioma" class="flag-icon">`;
@@ -307,3 +391,35 @@ window.onscroll = () => {
         if (a.getAttribute('href').includes(current)) a.classList.add('active');
     });
 };
+
+/* --- FORMULÁRIO DE CONTATO --- */
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const loadingEl = contactForm.querySelector('.loading');
+        const errorEl = contactForm.querySelector('.error-message');
+        const sentEl = contactForm.querySelector('.sent-message');
+
+        [loadingEl, errorEl, sentEl].forEach(el => el.style.display = 'none');
+        loadingEl.style.display = 'block';
+
+        fetch(contactForm.getAttribute('action'), {
+            method: 'POST',
+            body: new FormData(contactForm)
+        })
+            .then(response => {
+                loadingEl.style.display = 'none';
+                if (!response.ok) throw new Error('Erro no envio');
+                sentEl.style.display = 'block';
+                contactForm.reset();
+            })
+            .catch(() => {
+                loadingEl.style.display = 'none';
+                errorEl.textContent = translations[currentLang].form_error;
+                errorEl.style.display = 'block';
+            });
+    });
+}

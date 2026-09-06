@@ -601,6 +601,393 @@ footer {
     font-size: 0.9rem;
 }
 
+#resumo {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.resume-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.resume-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(var(--accent-rgb), 0.15);
+    border-radius: 14px;
+    padding: 22px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.experience-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.experience-card h4 {
+    color: var(--text-main);
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.experience-role {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.experience-period {
+    display: inline-block;
+    background-color: rgba(var(--accent-rgb), 0.15);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.experience-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.section-badge {
+    align-self: flex-start;
+    display: inline-block;
+    background-color: var(--accent);
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin: 0 auto 15px;
+}
+
+#resumo h2 {
+    text-align: left;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+#resumo h2 span {
+    border-bottom: none;
+}
+
+#resumo h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    margin-top: 12px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), rgba(var(--accent-rgb), 0.1));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -65px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.4);
+    z-index: 2;
+}
+
+.timeline-content {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(var(--accent-rgb), 0.15);
+    border-radius: 14px;
+    padding: 20px 25px;
+    transition: border-color 0.3s;
+}
+
+.timeline-content:hover {
+    border-color: var(--accent);
+}
+
+.timeline-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.year-range {
+    background-color: rgba(var(--accent-rgb), 0.15);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.degree-level {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content h4 {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.timeline-content .institution {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(var(--accent-rgb), 0.08);
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+.cert-year {
+    background-color: rgba(var(--accent-rgb), 0.15);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 20px;
+}
+
+/* --- 6. CONTATO / FORMULÁRIO --- */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.contact-info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(var(--accent-rgb), 0.25);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.info-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.info-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--accent-rgb), 0.15);
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.info-text strong {
+    color: var(--text-main);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info-text span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.contact-form {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(var(--accent-rgb), 0.25);
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.15);
+}
+
+.contact-form button.btn {
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.contact-form .form-status {
+    font-size: 0.9rem;
+}
+
+.contact-form .loading,
+.contact-form .error-message,
+.contact-form .sent-message {
+    display: none;
+}
+
+.contact-form .loading {
+    color: var(--text-muted);
+}
+
+.contact-form .error-message {
+    color: #ff6b6b;
+}
+
+.contact-form .sent-message {
+    color: var(--backend);
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
     #home {
@@ -618,6 +1005,15 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
@@ -684,5 +1080,29 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 50px;
+    }
+
+    .timeline::before {
+        left: 19px;
+    }
+
+    .timeline-marker {
+        left: -50px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .timeline-meta {
+        flex-wrap: wrap;
+        gap: 8px;
     }
 }

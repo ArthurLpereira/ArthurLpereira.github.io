@@ -22,6 +22,7 @@
             <ul>
                 <li><a href="#home" onclick="toggleMenu()" data-i18n="nav_home">Início</a></li>
                 <li><a href="#sobre" onclick="toggleMenu()" data-i18n="nav_about">Sobre</a></li>
+                <li><a href="#resumo" onclick="toggleMenu()" data-i18n="nav_resume">Resumo</a></li>
                 <li><a href="#skills" onclick="toggleMenu()" data-i18n="nav_skills">Tecnologias</a></li>
                 <li><a href="#projetos" onclick="toggleMenu()" data-i18n="nav_projects">Projetos</a></li>
                 <li><a href="#contato" onclick="toggleMenu()" data-i18n="nav_contact">Contato</a></li>
@@ -62,6 +63,110 @@
         </div>
     </section>
 
+    <section id="resumo">
+        <div class="resume-columns">
+
+            <div class="resume-column">
+                <span class="section-badge" data-i18n="exp_badge">Experiência</span>
+                <h2><span data-i18n="exp_title">Experiência Profissional</span></h2>
+                <p class="resume-subtitle" data-i18n="exp_subtitle">Projetos práticos desenvolvidos durante minha
+                    formação técnica no SENAI.</p>
+
+                <div class="experience-cards">
+                    <div class="experience-card">
+                        <div class="experience-icon"><i class="fas fa-desktop"></i></div>
+                        <h4 data-i18n="exp_item1_title">Projeto Contador de Alunos</h4>
+                        <p class="experience-role" data-i18n="exp_item1_type">Front-End</p>
+                        <span class="experience-period">2024</span>
+                        <p class="experience-desc" data-i18n="exp_item1_desc">Projeto acadêmico feito no curso do SENAI, para substituir a contagem manual de alunos no refeitório.</p>
+                        <div class="experience-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-icon"><i class="fas fa-server"></i></div>
+                        <h4 data-i18n="exp_item2_title">Projeto SGA</h4>
+                        <p class="experience-role" data-i18n="exp_item2_type">Back-End</p>
+                        <span class="experience-period">2025</span>
+                        <p class="experience-desc" data-i18n="exp_item2_desc">Projeto acadêmico feito no curso do SENAI, para ajudar no gerenciamento de turmas, colaboradores, ambientes, cursos e turmas.</p>
+                        <div class="experience-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-column">
+                <span class="section-badge" data-i18n="resume_badge">Educação</span>
+                <h2><span data-i18n="resume_title">Historico Academico</span></h2>
+                <p class="resume-subtitle" data-i18n="resume_subtitle">Minha trajetória educacional em tecnologia, do
+                    técnico à graduação.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="year-range">2024 - 2025</span>
+                                <span class="degree-level" data-i18n="resume_item1_type">Curso</span>
+                            </div>
+                            <h4 data-i18n="resume_item1_title">Análise e Desenvolvimento de Sistemas - Curso Técnico</h4>
+                            <div class="achievement">
+                                <i class="fas fa-award"></i>
+                                <span data-i18n="resume_item1_achievement">Estágio pelo destaque</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-book"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="year-range">2026 - 2028</span>
+                                <span class="degree-level" data-i18n="resume_item2_type">Faculdade</span>
+                            </div>
+                            <h4 data-i18n="resume_item2_title">Análise e Desenvolvimento de Sistemas - Tecnólogo</h4>
+                            <p class="institution">Unoeste</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-certificate"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span></span>
+                                <span class="degree-level" data-i18n="resume_item3_type">Certificados</span>
+                            </div>
+                            <h4 data-i18n="resume_item3_title">Certificados</h4>
+                            <div class="certifications-list">
+                                <div class="cert-item">
+                                    <span class="cert-name">WEB 3.0</span>
+                                    <span class="cert-year">2025</span>
+                                </div>
+                                <div class="cert-item">
+                                    <span class="cert-name" data-i18n="cert2_name">Fluência - Fundamentos da inteligência artificial</span>
+                                    <span class="cert-year">2025</span>
+                                </div>
+                                <div class="cert-item">
+                                    <span class="cert-name" data-i18n="cert3_name">Privacidade e proteção de dados (LGPD)</span>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="skills">
         <h2><span data-i18n="skills_title">Tecnologias</span></h2>
         <div class="skills-grid" id="skillsGrid">
@@ -70,6 +175,7 @@
             <div class="skill-card"> <i class="fab fa-js"></i> <span>JavaScript</span> </div>
             <div class="skill-card"> <i class="fab fa-react"></i> <span>React</span> </div>
             <div class="skill-card backend"> <i class="fas fa-database"></i> <span>SQL</span> </div>
+
             <div class="skill-card backend"> <i class="fab fa-php"></i> <span>PHP</span> </div>
             <div class="skill-card backend"> <i class="fab fa-laravel"></i> <span>Laravel</span> </div>
             <div class="skill-card backend"> <i class="fab fa-git-alt"></i> <span>Git</span> </div>
@@ -113,19 +219,53 @@
     </section>
 
     <section id="contato">
-        <h2><span data-i18n="contact_title">Vamos Conversar?</span></h2>
-        <div style="text-align: center; color: var(--text-muted);">
-            <p data-i18n="contact_text">Estou disponível para novas oportunidades e colaborações.</p>
-            <br>
-            <a href="mailto:arthurleandro50@gmail.com" class="btn" data-i18n="contact_btn">Enviar E-mail</a>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/arthurleandrodev/" class="social-icon" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ArthurLpereira" class="social-icon" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/arthur_leandr00/" class="social-icon" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
+        <h2><span data-i18n="contact_title">Contato</span></h2>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-cards">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <strong data-i18n="contact_address_label">Endereço</strong>
+                        <span>Presidente Prudente, SP</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="info-text">
+                        <strong data-i18n="contact_phone_label">Me ligue</strong>
+                        <span>18 99818-5366</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <strong data-i18n="contact_email_label">Mande um email</strong>
+                        <span>arthurleandro50@gmail.com</span>
+                    </div>
+                </div>
             </div>
+
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-form" id="contactForm">
+                <input type="hidden" name="access_key" value="25fc95ac-5f73-41c7-b91b-da993f2a3d10">
+
+                <div class="form-row">
+                    <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Seu nome" required>
+                    <input type="email" name="email" data-i18n-placeholder="form_email" placeholder="Seu email" required>
+                </div>
+                <input type="text" name="subject" data-i18n-placeholder="form_subject" placeholder="Assunto" required>
+                <textarea name="message" rows="6" data-i18n-placeholder="form_message" placeholder="Mensagem" required></textarea>
+
+                <div class="form-status">
+                    <div class="loading" data-i18n="form_loading">Carregando</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message" data-i18n="form_sent">Sua mensagem foi enviada. Obrigado.</div>
+                </div>
+
+                <button type="submit" class="btn" data-i18n="form_submit">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
 
